@@ -6,7 +6,7 @@
     "dev": "nodemon index.ts",
     "prebuild": "rimraf ./dist",
     "build": "tsc && cd client && yarn build",
-    "postbuild": "cp -r views ./dist/views",
+    "postbuild": "cp -r views ./dist/",
     "migrate-dev": "prisma migrate dev",
     "migrate-deploy": "prisma migrate deploy",
     "migrate-reset": "prisma migrate reset",
